@@ -43,7 +43,7 @@ The best result is saved to `out/ga_best_calibration.xml`, containing:
 ## 📁 Project Structure
 
 ```text
-├── app.py                  # Main entry point, MainWindow (PyQt6)
+├── ccalib_ga.py            # Main entry point, MainWindow (PyQt6)
 ├── calibration_worker.py   # All 3 calibration mode widgets + workers (QThread)
 ├── ga_worker.py            # GAWorker QThread (wraps GAEngine)
 ├── ga_engine.py            # Genetic Algorithm core logic
@@ -87,7 +87,7 @@ package. To use it, OpenCV must be compiled from source with the
 4. Place the compiled `.pyd` file — rename it to `cv2.pyd` — and all
    required `.dll` files into the Python `site-packages` directory:
 ```text
-C:\Users\<user>\AppData\Local\Programs\Python\Python314\Lib\site-packages\cv2\
+C:\Users\<user>\AppData\Local\Programs\Python\Python314\Lib\site-packages\
 ```
 5. Add or update `__init__.py` in that folder to expose the `cv2` module
    correctly
@@ -100,7 +100,7 @@ Python script or virtual environment pointing to that interpreter.
 ## 🚀 Usage
 
 ```bash
-python app.py
+python ccalib_ga.py
 ```
 
 ### Real-Time mode
@@ -142,8 +142,8 @@ Tunable in `ga_constants.py`:
 ## 💡 Inspiration & References
 
 - **GA calibration image selection**:
-  [ga_stereocalib](https://github.com/asergiu/ga_stereocalib) by Alexandru-Ion Marinescu and A. Sergiu
-  [IJCAI 2021 AI4AD Workshop](https://www.youtube.com/watch?v=Jyu6Z_Fc5pE) by Alexandru-Ion Marinescu, Adrian-Sergiu Darabant and Tudor-Alexandru Ileni
+  [ga_stereocalib](https://github.com/asergiu/ga_stereocalib) by Alexandru-Ion Marinescu and A. Sergiu -
+  [IJCAI 2021 AI4AD Workshop](https://www.youtube.com/watch?v=Jyu6Z_Fc5pE) by Alexandru-Ion Marinescu, Adrian-Sergiu Darabant and Tudor-Alexandru Ileni -
   genetic algorithm for stereo camera calibration image subset selection.
   This project adapts and extends that approach to monocular calibration with
   custom patterns.
@@ -158,4 +158,4 @@ Tunable in `ga_constants.py`:
 
 ## 📄 License
 
-This project is intended for research and educational use.
+This project is intended for research and educational use. (MIT)
