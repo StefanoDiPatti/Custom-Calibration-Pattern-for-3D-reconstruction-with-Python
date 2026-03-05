@@ -1,4 +1,4 @@
-# 📷 Custom Pattern Camera Calibration Tool
+# 📷 # 📷 Custom Pattern Camera Calibration-Tool with GA Optimization
 
 A PyQt6-based desktop application for monocular camera calibration using
 custom (non-chessboard) patterns. The tool integrates a **Genetic Algorithm (GA)**
